@@ -16,6 +16,7 @@ const backToProjectsBtn1 = document.getElementById("backToProjects1");
 const backToProjectsBtn2 = document.getElementById("backToProjects2");
 const backToProjectsBtn3 = document.getElementById("backToProjects3");
 const backToProjectsBtn4 = document.getElementById("backToProjects4");
+const backToProjectsBtn5 = document.getElementById("backToProjects5")
 const projectPages = document.querySelectorAll(".project-pages");
 const educationContainer = document.getElementById("education-container");
 const contactContainer = document.getElementById("contact-container");
@@ -87,6 +88,10 @@ function displayProject(projectId){
         displayProjectPage();
     }) 
     backToProjectsBtn4.addEventListener("click", () => {
+        document.getElementById(projectId).classList.add("hidden");
+        displayProjectPage();
+    }) 
+    backToProjectsBtn5.addEventListener("click", () => {
         document.getElementById(projectId).classList.add("hidden");
         displayProjectPage();
     }) 
